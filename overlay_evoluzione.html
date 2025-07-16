@@ -3,23 +3,28 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Overlay PSM</title>
+  <title>Overlay PSM - versione finale</title>
   <style>
     .container {
       position: relative;
-      width: 1200px;
-      background-image: url('evoluzione.png');
-      background-size: cover;
+      display: inline-block;
       font-family: 'Avenir Next', 'Avenir Next World', sans-serif;
+    }
+
+    .container img {
+      display: block;
+      width: 1200px;
+      height: auto;
     }
 
     .hotspot {
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 80px;
+      height: 80px;
       border: none;
       background: transparent;
       cursor: pointer;
+      transform: translate(-40px, -40px); /* centro spostato a nord-ovest */
     }
 
     .tooltip {
@@ -41,6 +46,8 @@
 </head>
 <body>
   <div class="container">
+    <img src="evoluzione.png" alt="Evoluzione PSM">
+    
     <button class="hotspot" style="top: 203px; left: 164px;"></button>
     <div class="tooltip" style="top: 243px; left: 164px;">
       <strong>1. Monitoraggio dell’attuazione del Piano</strong><br>
@@ -77,14 +84,14 @@
     </div>
 
     <button class="hotspot" style="top: 140px; left: 1045px;"></button>
-    <div class="tooltip" style="top: 180px; left: 1045px;">
+    <div class="tooltip" style="top: 140px; left: 760px;">
       <strong>6. Approfondimenti conoscitivi e metodologici</strong><br>
       Aggiornamento dei dataset, sviluppo indicatori più efficaci, supporto a vocazioni e scelte di Piano.<br>
       (Azioni F.1–F.2)
     </div>
 
     <button class="hotspot" style="top: 318px; left: 1094px;"></button>
-    <div class="tooltip" style="top: 358px; left: 1094px;">
+    <div class="tooltip" style="top: 318px; left: 760px;">
       <strong>7. Cooperazione transfrontaliera</strong><br>
       Cooperazione e armonizzazione con piani e politiche dei Paesi confinanti, uso di piattaforme internazionali.<br>
       (Azione G.1)
